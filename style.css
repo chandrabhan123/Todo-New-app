@@ -14,7 +14,6 @@ body{
 }
 
 .container{
-    width: 30%;
     padding: 20px;
     border-radius: 10px;
     background-color: #ebf4f5;
@@ -33,7 +32,6 @@ input{
     border-radius: 10px;
     outline: none;
     border: 2px solid gray;
-    width: 80%;
 }
 input::placeholder{
     font-size: 16px;
@@ -43,6 +41,8 @@ button{
     background-color: #432371;
     float: right;
     border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 i{
     color: #ffffff;
@@ -69,4 +69,13 @@ i{
 .todo_content i{
     color: #000000;
     font-size: 20px;
+}
+
+@media (min-width:768px) {
+    .container{
+        width: 40%;
+    }
+    input{
+        width: 75%;
+    }
 }
